@@ -29,6 +29,7 @@ jobs:
 
       - name: Install test dependencies.
         run: |
+          python -m pip3 install --upgrade pip3
           pip3 install ansible==2.10.7
           pip3 install ansible-lint==5.3.2
           pip3 install molecule-docker==0.2.4
