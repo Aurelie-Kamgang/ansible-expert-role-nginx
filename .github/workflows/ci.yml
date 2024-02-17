@@ -33,7 +33,7 @@ jobs:
           pip3 install ansible-lint
           pip3 install molecule-docker
           pip3 install yamllint
-          pip3 install molecule
+          pip3 install molecule==4.0.4
           python3 -m site &> /dev/null && PATH="$PATH:`python3 -m site --user-base`/bin"
           molecule --version
           ansible --version
