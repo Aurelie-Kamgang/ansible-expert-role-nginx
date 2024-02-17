@@ -32,7 +32,7 @@ jobs:
           pip3 install molecule --user
           pip3 install molecule-plugins --user
           pip3 install docker --user
-          pip3 install ansible-lint --user
+          pip3 install ansible-lint==4.3.0 --user
           python3 -m site &> /dev/null && PATH="$PATH:`python3 -m site --user-base`/bin"
           molecule --version
           ansible --version
