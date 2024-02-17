@@ -31,6 +31,7 @@ jobs:
         run: |
           pip3 install molecule==4.0.4 --user
           pip3 install molecule-plugins --user
+          pip3 install docker --user
           python3 -m site &> /dev/null && PATH="$PATH:`python3 -m site --user-base`/bin"
           molecule --version
           ansible --version
