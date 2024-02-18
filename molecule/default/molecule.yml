@@ -5,7 +5,7 @@ driver:
   name: docker
 lint: |
   set -e
-  ansible-lint -x meta-incorrect,meta-no-info,package-latest,yaml,metadata
+  ansible-lint -x meta-incorrect,meta-no-info,package-latest,yaml,metadata .
 platforms:
   - name: instance-centos
     image: "eazytraining/diveintoansible:centos"
